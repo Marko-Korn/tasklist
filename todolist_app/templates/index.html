@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  <title>Welcome to Task</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <img src="{% static 'images/notebook.jpg' %}"
+             alt="Notebook"
+             class="shadow-sm rounded"
+             width="360"
+             height="250" />
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/pen.jpg' %}"
+             alt="Pen and notebook"
+             class="shadow-sm rounded"
+             width="360"
+             height="250" />
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/stickynotes.jpg' %}"
+             alt="Sticky notes"
+             class="shadow-sm rounded"
+             width="360"
+             height="250" />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-md-10 offset-md-1">
+        <center>
+          <p class="h2">Stay organized and boost productivity.</p>
+        </center>
+        <center>
+          <p class="h3">Track your progress effortlessly.</p>
+        </center>
+        <center>
+          <p class="h4">Prioritize tasks with ease.</p>
+        </center>
+
+        <center>
+          <a href="{% url 'todolist' %}">
+            <button type="button" class="btn btn-primary btn-lg mt-3 shadow">Get Started</button>
+          </a>
+        </center>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
