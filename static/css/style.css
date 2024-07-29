@@ -1,0 +1,226 @@
+*,
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.black {
+  background-color: #171717 !important;
+}
+
+.grey {
+  background-color: #444444 !important;
+}
+
+.red {
+  background-color: #da0037 !important;
+}
+
+.light {
+  background-color: #ededed !important;
+}
+
+.light-text {
+  color: #ededed !important;
+}
+
+.btn-primary {
+  color: #171717 !important;
+  border: #171717 !important;
+}
+
+.log-btn {
+  background-color: #444444 !important;
+  border-color: #da0037 !important;
+  border: 1px;
+  color: #ededed !important;
+}
+
+.reg-btn {
+  background-color: #ededed !important;
+  border-color: #444444 !important;
+  border: 1px;
+  color: #444444 !important;
+}
+
+.add-btn {
+  background-color: #171717;
+  border-color: #ededed !important;
+  border: 1px;
+  color: #ededed !important;
+}
+
+.row-complete {
+  background-color: #ededed !important;
+  color: #444444 !important;
+}
+
+.row-pending {
+  background-color: #444444 !important;
+  color: #ededed !important;
+}
+
+.check-btn {
+  padding: 0% !important;
+  border: 0px !important;
+}
+
+.form-text {
+  color: #ededed !important;
+}
+
+.new-task {
+  width: 100% !important;
+  height: 2rem;
+}
+/*------------------------------------------------------------PAGINATION-----------------------------------------------*/
+.page-link {
+  transition: background-color 0.3s ease !important;
+  background-color: #171717 !important;
+  color: #ededed !important;
+  border-color: #da0037 !important;
+  border-width: 1px !important;
+}
+.page-link:hover {
+  background-color: #da0037 !important;
+}
+.page-link:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+/*------------------------------------------------------------INDEX IMAGE EFFECT-----------------------------------------------*/
+.image {
+  position: relative;
+  width: 400px;
+}
+
+.image__img {
+  display: block;
+  width: 100%;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+  background: #009578;
+}
+
+.image__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.image__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+/*------------------------------------------------------------INDEX IMAGES SLIDE EFFECT-----------------------------------------------*/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+/*------------------------------------------------------------CONTACT FORM-----------------------------------------------*/
+textarea:focus,
+input:focus {
+  border-color: #da0037;
+  outline: 1px solid #da0037;
+}
+.input-field {
+  width: 500px;
+}
+
+.input-message {
+  width: 500px;
+  height: 150px;
+}
+
+.center-block {
+  color: white;
+  padding: 3px;
+  margin: auto;
+  display: block;
+  background-color: #171717;
+  margin-bottom: 5px;
+  border: 0;
+}
+
+.contact-button {
+  transition: background-color 0.3s ease;
+  width: 8rem;
+}
+
+.index-button {
+  transition: background-color 0.3s ease;
+  width: 8rem;
+  height: 3rem;
+}
+.index-button:hover {
+  background-color: #da0037;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #da0037;
+  cursor: pointer;
+}

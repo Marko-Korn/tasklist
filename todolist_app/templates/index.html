@@ -6,48 +6,66 @@
 {% endblock title %}
 
 {% block content %}
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-lg-4">
-        <img src="{% static 'images/notebook.jpg' %}"
-             alt="Notebook"
-             class="shadow-sm rounded"
-             width="360"
-             height="250" />
+  <div class="container mt-5">
+    <div class="text-center light-text">
+      <h1>Welcome to TaskList!</h1>
+      <hr />
+      <h3>Organize. Prioritize. Achieve.</h3>
+      <p>
+        Are you ready to take control of your tasks and boost your productivity? TaskList is here to help you stay organized, focused, and efficient. With a user-friendly interface and powerful features, managing your tasks has never been easier.
+      </p>
+      <hr />
+      <h3>Key Features:</h3>
+    </div>
+    <div class="row logos">
+      <div class="col logo hidden">
+        <div class="image">
+          <img class="image__img rounded-3"
+               src="{% static 'images/notebook.jpg' %}"
+               alt="Notebook"
+               width="250px"
+               height="250px" />
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Stay organized and boost productivity.</div>
+            <p class="image__description">
+              Keep all your tasks in one place to enhance efficiency and productivity.
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <img src="{% static 'images/pen.jpg' %}"
-             alt="Pen and notebook"
-             class="shadow-sm rounded"
-             width="360"
-             height="250" />
+      <div class="col logo hidden">
+        <div class="image">
+          <img class="image__img rounded-3"
+               src="{% static 'images/pen.jpg' %}"
+               alt="Pen"
+               width="250px"
+               height="250px" />
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Track your progress effortlessly.</div>
+            <p class="image__description">Easily monitor completed tasks and stay on top of your to-dos.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4">
-        <img src="{% static 'images/stickynotes.jpg' %}"
-             alt="Sticky notes"
-             class="shadow-sm rounded"
-             width="360"
-             height="250" />
+      <div class="col logo hidden">
+        <div class="image">
+          <img class="image__img rounded-3"
+               src="{% static 'images/stickynotes.jpg' %}"
+               alt="Stickynotes"
+               width="250px"
+               height="250px" />
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Prioritize tasks with ease.</div>
+            <p class="image__description">Seamlessly prioritize to focus on what matters most.</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-md-10 offset-md-1">
-        <center>
-          <p class="h2">Stay organized and boost productivity.</p>
-        </center>
-        <center>
-          <p class="h3">Track your progress effortlessly.</p>
-        </center>
-        <center>
-          <p class="h4">Prioritize tasks with ease.</p>
-        </center>
-
-        <center>
-          <a href="{% url 'todolist' %}">
-            <button type="button" class="btn btn-primary btn-lg mt-3 shadow">Get Started</button>
-          </a>
-        </center>
-      </div>
-    </div>
+  </div>
+  <div class="models">
+    <center>
+      <a href="{% url 'todolist' %}">
+        <button type="button" class="center-block index-button mt-5 rounded-3">Get Started!</button>
+      </a>
+    </center>
   </div>
 {% endblock content %}
